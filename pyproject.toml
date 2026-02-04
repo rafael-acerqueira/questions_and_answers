@@ -10,4 +10,5 @@ dependencies = [
     "langchain>=1.2.8",
     "langchain-community>=0.4.1",
     "pypdf>=6.6.2",
+    "wikipedia>=1.4.0",
 ]

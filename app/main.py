@@ -20,3 +20,9 @@ def load_document(file):
         return None
     data = loader.load()
     return data
+
+def load_from_wikipedia(query, lang='en', load_max_docs=2):
+    from langchain_community.document_loaders.wikipedia import WikipediaLoader
+    loader = WikipediaLoader(query=query, lang=lang, load_max_docs=load_max_docs)
+    data = loader.load()
+    return data
